@@ -488,12 +488,12 @@ async function patchAppAPILoader() {
 app.registerExtension({
   name: "Comfy.falConnector",
   async setup() {
-    await registerFalConnectButton();
-    await registerFalInfoLabel();
-    await hideUnusedElements();
+    // await registerFalConnectButton();
+    // await registerFalInfoLabel();
+    // await hideUnusedElements();
     await registerSaveFalFormatButton();
-    await patchAppAPILoader();
-    await addfalListeners();
+    // await patchAppAPILoader();
+    // await addfalListeners();
     await sendReadyMessage();
   },
   async beforeRegisterNodeDef(nodeType, nodeData, app) {
